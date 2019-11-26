@@ -1,16 +1,18 @@
 import React from "react"
 import { Link } from "gatsby"
+import KlocLogo from "../images/kloc.png"
 
 const classes = {
   links: "text-csdark font-semibold mr-8 tracking-wide text-lg",
 }
 
 const Header = () => (
-  <header className="bg-white py-8">
-    <div className="container mx-auto px-4 w-full flex justify-center">
-      <nav>
+  <header className="bg-white py-2 lg:py-4">
+    <div className="container mx-auto px-4 w-full flex items-center">
+      <img src={KlocLogo} className="w-40 h-auto mr-auto" alt="Kloc logo" />
+      <nav className="flex-1 mx-auto flex justify-center lg:justify-end">
         {/* TABLET/DESKTOP MENU */}
-        <div className="hidden md:block">
+        <div className="hidden lg:inline-block">
           <Link to="/" className={classes.links}>
             Services
           </Link>
