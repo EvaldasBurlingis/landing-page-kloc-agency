@@ -32,7 +32,7 @@ const IndexPage = () => (
             <Button variant="dark" link="/" text="Enquire" />
           </div>
         </div>
-        <div className="w-full flex justify-center items-center absolute top-0 left-0 z-0 opacity-20 pt-16 lg:w-2/5 lg:relative lg:opacity-100">
+        <div className="w-full flex justify-center items-center absolute top-0 left-0 z-0 opacity-25 pt-16 lg:w-2/5 lg:relative lg:opacity-100">
           <HeroImage />
         </div>
       </div>
