@@ -6,10 +6,10 @@ const Button = ({ variant, link, text }) => {
 
     switch(variant) {
         case "dark":
-            linkStyle = "bg-gray-800 text-gray-100 font-semibold text-xl py-3 px-8 rounded mr-2";
+            linkStyle = "bg-gray-800 text-gray-100";
             break;
         case "light":
-            linkStyle = "bg-gray-200 text-csdark font-semibold text-xl py-3 px-8 rounded mr-2";
+            linkStyle = "bg-gray-200 text-csdark";
             break;
         case "gradient":
             linkStyle = "bg-red-500 text-gray-100";
@@ -21,7 +21,7 @@ const Button = ({ variant, link, text }) => {
 
 
     return (
-        <Link to={link} className={linkStyle}>{text}</Link>
+        <Link to={link} className={`${linkStyle} font-semibold text-lg py-2 px-4 lg:text-xl lg:py-3 lg:px-8 rounded mr-2`}>{text}</Link>
     )
 }
 

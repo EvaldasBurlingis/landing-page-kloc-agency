@@ -5,19 +5,33 @@
 @tailwind utilities;
 
 /* Typography */
-
 .poppins {
     font-family: "Poppins", sans-serif;
 }
 
 /* Backgrounds */
-
 .bg-gradient-purple-blue {
     background: linear-gradient(117.33deg, #772AAE -6.75%, #5E97E8 108.52%);
 }
 
-
 /* Hero section */
 .hero {
-    height: 800px;
+   height: calc(100vh - 5rem);
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 700px;
+    }
+ }
+
+@media (min-width: 1024px) {
+    .hero {
+        height: 800px;
+    }
+ }
+
+/* Utils */
+.opacity-20 {
+    opacity: 20%;
 }
