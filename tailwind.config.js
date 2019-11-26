@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        csdark: "#2F2E41",
+        csdark: "#2D3748",
       },
     },
   },

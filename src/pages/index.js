@@ -3,6 +3,10 @@ import Layout from "../components/layout"
 import Button from "../components/button"
 import HeroImage from "../components/svg/hero"
 
+const classes = {
+  title: "font-bold text-5xl text-center text-csdark mb-16"
+}
+
 const IndexPage = () => (
   <Layout>
     <section className="hero w-full bg-gradient-purple-blue">
@@ -20,6 +24,9 @@ const IndexPage = () => (
           <HeroImage />
         </div>
       </div>
+    </section>
+    <section className="w-full py-16">
+      <h2 className={classes.title}>How can we help you?</h2>
     </section>
 
   </Layout>
