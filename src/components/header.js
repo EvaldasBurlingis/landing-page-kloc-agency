@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "gatsby";
+import React from "react"
+import { Link } from "gatsby"
 
 const classes = {
   links: "text-csdark font-semibold mr-8 tracking-wide text-lg",
@@ -35,4 +35,4 @@ const Header = () => (
   </header>
 )
 
-export default Header;
+export default Header
