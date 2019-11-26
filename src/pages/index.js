@@ -3,9 +3,16 @@ import Layout from "../components/layout"
 import Button from "../components/button"
 import HeroImage from "../components/svg/hero"
 import ServicesImage from "../components/svg/services"
+import FitbitLogo from "../images/fitbit.png"
+import AboveTheLineLogo from "../images/abovetheline.png"
+import TheContractChairLogo from "../images/thecontractchair.png"
+import ApdoLogo from "../images/apdologo.png"
+import TravelNurseLogo from "../images/travelnurse.png"
+import StewartsLogo from "../images/stewartslogo.jpg"
 
 const classes = {
-  title: "font-bold text-3xl md:text-5xl text-left text-csdark mb-6 lg:text-center lg:mb-20",
+  section: "w-full pt-16",
+  title: "font-bold text-3xl md:text-5xl text-left text-csdark mb-6 lg:text-center lg:mb-10",
   services: {
     title: "font-semibold text-gray-800 text-xl mb-2",
     lead: "font-medium mb-6 text-base",
@@ -37,14 +44,16 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className="w-full py-16">
+    <section className={classes.section}>
       <div className="container mx-auto px-4">
         <h2 className={classes.title}>How can we help you?</h2>
-        <div className="w-full flex flex-wrap flex-col lg:flex-row">
+        <div className="w-full flex flex-wrap flex-col lg:flex-row lg:pt-10">
           <div className="w-full flex items-center justify-center order-2 md:mb-8 lg:w-3/5 lg:order-1">
             <ServicesImage />
           </div>
-          <div className={`${classes.services.wrapper}order-1 lg:w-2/5 lg:order-2 lg:pl-8`}>
+          <div
+            className={`${classes.services.wrapper}order-1 lg:w-2/5 lg:order-2 lg:pl-8`}
+          >
             <h3 className={classes.services.title}>Web development</h3>
             <p className={classes.services.lead}>
               We specialise in developing bespoke and complex websites
@@ -54,7 +63,9 @@ const IndexPage = () => (
               of professional project management and dependable on-going support
             </p>
           </div>
-          <div className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-20`}>
+          <div
+            className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-16`}
+          >
             <h3 className={classes.services.title}>Ecommerce development</h3>
             <p className={classes.services.lead}>
               Our experience in eCommerce goes back over 20 years and we excel
@@ -67,7 +78,9 @@ const IndexPage = () => (
               on-going support
             </p>
           </div>
-          <div className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-20`}>
+          <div
+            className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-16`}
+          >
             <h3 className={classes.services.title}>Membership solutions</h3>
             <p className={classes.services.lead}>
               A dedicated cloud-based solution for membership organisations and
@@ -82,7 +95,9 @@ const IndexPage = () => (
               databases
             </p>
           </div>
-          <div className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-20`}>
+          <div
+            className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-16`}
+          >
             <h3 className={classes.services.title}>Mobile App development</h3>
             <p className={classes.services.lead}>
               We love the way a mobile app can empower your workforce. We build
@@ -93,6 +108,31 @@ const IndexPage = () => (
               To discuss your ideas for mobile app development please contact us
               for a no-obligation chat
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section className={classes.section}>
+      <div className="container mx-auto px-4 pb-20">
+        <h2 className={classes.title}>Some of our clients</h2>
+        <div className="bg-white flex flex-wrap rounded shadow-lg">
+          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200 border-b">
+            <img src={FitbitLogo} alt="" className="w-40 h-auto" />
+          </div>
+          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200 border-b">
+            <img src={AboveTheLineLogo} alt="" className="w-40 h-auto" />
+          </div>
+          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-gray-200 border-b border-r md:border-r-0">
+            <img src={TheContractChairLogo} alt="" className="w-40 h-auto" />
+          </div>
+          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200 border-b md:border-b0">
+            <img src={ApdoLogo} alt="" className="w-20 h-auto" />
+          </div>
+          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200">
+            <img src={TravelNurseLogo} alt="" className="w-32 h-auto" />
+          </div>
+          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center">
+            <img src={StewartsLogo} alt="" className="w-40 h-auto" />
           </div>
         </div>
       </div>
