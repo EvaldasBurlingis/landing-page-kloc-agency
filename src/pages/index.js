@@ -9,6 +9,7 @@ import TheContractChairLogo from "../images/thecontractchair.png"
 import ApdoLogo from "../images/apdologo.png"
 import TravelNurseLogo from "../images/travelnurse.png"
 import StewartsLogo from "../images/stewartslogo.jpg"
+import Tilt from 'react-tilt'
 
 const classes = {
   section: "w-full pt-16",
@@ -40,7 +41,11 @@ const IndexPage = () => (
           </div>
         </div>
         <div className="w-full flex justify-center items-center absolute top-0 left-0 z-0 opacity-25 pt-16 lg:w-2/5 lg:relative lg:opacity-100">
-          <HeroImage />
+        <Tilt className="Tilt" options={{ max : 15, scale: 1, }} >
+          <div className="Tilt-inner">
+            <HeroImage />
+          </div>
+        </Tilt>
         </div>
       </div>
     </section>
