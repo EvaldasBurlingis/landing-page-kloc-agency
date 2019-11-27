@@ -10,6 +10,7 @@ import ApdoLogo from "../images/apdologo.png"
 import TravelNurseLogo from "../images/travelnurse.png"
 import StewartsLogo from "../images/stewartslogo.jpg"
 import Tilt from 'react-tilt'
+import AccordionMenu from "../components/accordion"
 
 const classes = {
   section: "w-full pt-16",
@@ -117,6 +118,7 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
+    <AccordionMenu/>
     <section className={classes.section}>
       <div className="container mx-auto px-4 pb-20">
         <h2 className={classes.title}>Some of our clients</h2>
