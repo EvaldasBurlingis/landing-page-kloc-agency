@@ -3,14 +3,9 @@ import Layout from "../components/layout"
 import Button from "../components/button"
 import HeroImage from "../components/svg/hero"
 import ServicesImage from "../components/svg/services"
-import FitbitLogo from "../images/fitbit.png"
-import AboveTheLineLogo from "../images/abovetheline.png"
-import TheContractChairLogo from "../images/thecontractchair.png"
-import ApdoLogo from "../images/apdologo.png"
-import TravelNurseLogo from "../images/travelnurse.png"
-import StewartsLogo from "../images/stewartslogo.jpg"
 import Tilt from 'react-tilt'
 import AccordionMenu from "../components/accordion"
+import ClientsCard from "../components/cards/clients"
 
 const classes = {
   section: "w-full pt-16",
@@ -117,32 +112,18 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
-    </section>
-    <AccordionMenu/>
-    <section className={classes.section}>
-      <div className="container mx-auto px-4 pb-20">
-        <h2 className={classes.title}>Some of our clients</h2>
-        <div className="bg-white flex flex-wrap rounded shadow-lg">
-          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200 border-b">
-            <img src={FitbitLogo} className="w-40 h-auto" alt="Fitbit logo"/>
-          </div>
-          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200 border-b">
-            <img src={AboveTheLineLogo} className="w-40 h-auto" alt="Above The Line logo"/>
-          </div>
-          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-gray-200 border-b border-r md:border-r-0">
-            <img src={TheContractChairLogo} className="w-40 h-auto" alt="The Contract Chair logo"/>
-          </div>
-          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200 border-b md:border-b0">
-            <img src={ApdoLogo} className="w-20 h-auto" alt="Apdo logo" />
-          </div>
-          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center border-r border-gray-200">
-            <img src={TravelNurseLogo} className="w-32 h-auto" alt="Travel Nurse Logo"/>
-          </div>
-          <div className="w-1/2 md:w-1/3 h-32 flex justify-center items-center">
-            <img src={StewartsLogo} className="w-40 h-auto" alt="Stewarts Logo"/>
-          </div>
-        </div>
+      <div className="hidden">
+        <AccordionMenu/>
       </div>
+    </section>
+    <section className={classes.section}>
+      <div className="container mx-auto px-4 pb-32 -mt-10">
+        <h2 className={classes.title}>Some of our clients</h2>
+        <ClientsCard />
+      </div>
+    </section>
+    <section className="bg-white h-64 w-full -mt-64">
+
     </section>
   </Layout>
 )
