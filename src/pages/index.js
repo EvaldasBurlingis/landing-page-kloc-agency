@@ -7,6 +7,8 @@ import Tilt from 'react-tilt'
 import AccordionMenu from "../components/accordion"
 import ClientsCard from "../components/cards/clients"
 import TechnologiesImage from "../components/svg/technologies"
+import GradientBlob from "../components/svg/blob-gradient"
+import AboutImage from "../images/about-section-image.jpg"
 
 const classes = {
   section: "w-full pt-16",
@@ -124,7 +126,7 @@ const IndexPage = () => (
       </div>
     </section>
     <section className="bg-white w-full -mt-64 pt-40 pb-32 lg:pt-64">
-      <div className="container mx-auto flex flex-col px-4">
+      <div className="container mx-auto flex flex-col px-4 lg:flex-row">
         <div className="w-full lg:w-1/2">
           <h2 className={`${classes.title}`}>About us</h2>
           <p className="font-medium mb-4">KLOC, is a vibrant software development company creating bespoke solutions, in the heart of Southern England</p>
@@ -135,11 +137,16 @@ const IndexPage = () => (
           <p className="font-medium mb-8">If you need a dependable partner that will go the extra mile to make sure you get the solution you need, please contact us to find 
             out more about what makes us a better choice for your next project.</p>
           <p className="font-medium md:mb-8">Some of technologies we work with:</p>
-          <div className="flex w-11/12">
+          <div className="flex w-11/12 z-10 relative">
             <TechnologiesImage />
           </div>
         </div>
-        <div className="w-1/2"></div>
+        <div className="w-full lg:w-1/2 relative mt-10 lg:pl-20">
+          <span className="w-1/3 -mt-16 hidden lg:inline-block absolute z-0">
+            <GradientBlob/>
+          </span>
+          <img src={AboutImage} alt="" className="w-full absolute top-0 hidden lg:inline-block"/>
+        </div>
       </div>
     </section>
   </Layout>
