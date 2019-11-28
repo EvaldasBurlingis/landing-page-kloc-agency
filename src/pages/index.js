@@ -6,10 +6,11 @@ import ServicesImage from "../components/svg/services"
 import Tilt from 'react-tilt'
 import AccordionMenu from "../components/accordion"
 import ClientsCard from "../components/cards/clients"
+import TechnologiesImage from "../components/svg/technologies"
 
 const classes = {
   section: "w-full pt-16",
-  title: "font-bold text-3xl md:text-5xl text-left text-csdark mb-6 lg:text-center lg:mb-10",
+  title: "font-bold text-3xl md:text-5xl text-left text-csdark mb-6 lg:text-center",
   services: {
     title: "font-semibold text-gray-800 text-xl mb-2",
     lead: "font-medium mb-6 text-base",
@@ -122,8 +123,24 @@ const IndexPage = () => (
         <ClientsCard />
       </div>
     </section>
-    <section className="bg-white h-64 w-full -mt-64">
-
+    <section className="bg-white w-full -mt-64 pt-40 pb-32 lg:pt-64">
+      <div className="container mx-auto flex flex-col px-4">
+        <div className="w-full lg:w-1/2">
+          <h2 className={`${classes.title}`}>About us</h2>
+          <p className="font-medium mb-4">KLOC, is a vibrant software development company creating bespoke solutions, in the heart of Southern England</p>
+          <p className="mb-4">We specialise in transforming business know-how into elegant software solutions, which help future-proof your business with systems 
+            it needs to thrive, and functionality your customers demand. With over 30 years’ experience in development, we have a proven track 
+            record of creating high-quality, cost-effective solutions and maintenance backed by expert support. We are the ideal and safe choice 
+            for businesses looking for bespoke, solution development.</p>
+          <p className="font-medium mb-8">If you need a dependable partner that will go the extra mile to make sure you get the solution you need, please contact us to find 
+            out more about what makes us a better choice for your next project.</p>
+          <p className="font-medium md:mb-8">Some of technologies we work with:</p>
+          <div className="flex w-11/12">
+            <TechnologiesImage />
+          </div>
+        </div>
+        <div className="w-1/2"></div>
+      </div>
     </section>
   </Layout>
 )

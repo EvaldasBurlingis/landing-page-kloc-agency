@@ -5,7 +5,7 @@ import "../styles/main.css"
 
 const Layout = ({ children }) => {
   return (
-    <div className="w-full min-h-screen bg-gray-200 poppins">
+    <div className="w-full min-h-screen bg-gray-200 poppins overflow-x-hidden">
       <Header />
       {children}
     </div>
