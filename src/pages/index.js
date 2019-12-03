@@ -11,6 +11,7 @@ import GradientBlob from "../components/svg/blob-gradient"
 import AboutImage from "../images/about-section-image.jpg"
 import ChatBoxSvg from "../components/svg/chatbox"
 import Footer from "../components/footer"
+import { RevealGlobalStyles, Reveal, Animation } from "react-genie"
 
 const classes = {
   section: "w-full pt-16",
@@ -27,26 +28,31 @@ const classes = {
 
 const IndexPage = () => (
   <Layout>
+    <RevealGlobalStyles />
     <section className="hero w-full bg-gradient-purple-blue">
       <div className="container mx-auto px-4 w-full h-full flex flex-col items-center justify-center relative  md:pt-20 lg:pt-0 lg:flex-row">
         <div className="w-full z-10 md:pt-0 md:w-4/5 md:mx-auto lg:w-3/5">
-          <h1 className="text-4xl font-bold text-white leading-none mb-8 md:text-6xl md:mb-8">
-            We are here to find solutions to your problems
-          </h1>
-          <p className="text-md tracking-wide text-gray-100 mb-6 md:text-lg md:mb-8">
-            The KLOC development team have decades of experience building
-            business applications for companies ranging from international
-            publishers to mobile networks
-          </p>
-          <div>
-            <Button variant="light" link="/" text="Learn more" />
-            <Button variant="dark" link="/" text="Enquire" />
-          </div>
+          <Reveal animation={Animation.SlideInLeft}>
+            <h1 className="text-4xl font-bold text-white leading-none mb-8 md:text-6xl md:mb-8">
+              We are here to find solutions to your problems
+            </h1>
+            <p className="text-md tracking-wide text-gray-100 mb-6 md:text-lg md:mb-8">
+              The KLOC development team have decades of experience building
+              business applications for companies ranging from international
+              publishers to mobile networks
+            </p>
+            <div>
+              <Button variant="light" link="/" text="Learn more" />
+              <Button variant="dark" link="/" text="Enquire" />
+            </div>
+          </Reveal>
         </div>
         <div className="w-full flex justify-center items-center absolute top-0 left-0 z-0 opacity-25 pt-16 lg:w-2/5 lg:relative lg:opacity-100">
           <Tilt className="Tilt" options={{ max: 15, scale: 1 }}>
             <div className="Tilt-inner">
-              <HeroImage />
+              <Reveal animation={Animation.SlideInRight}>
+                <HeroImage />
+              </Reveal>
             </div>
           </Tilt>
         </div>
@@ -54,7 +60,9 @@ const IndexPage = () => (
     </section>
     <section className={classes.section}>
       <div className="container mx-auto px-4">
-        <h2 className={`${classes.title} text-left lg:text-center`}>How can we help you?</h2>
+        <h2 className={`${classes.title} text-left lg:text-center`}>
+          How can we help you?
+        </h2>
         <div className="w-full flex flex-wrap flex-col lg:flex-row lg:pt-10">
           <div className="w-full flex items-center justify-center order-2 md:mb-8 lg:w-3/5 lg:order-1">
             <ServicesImage />
@@ -126,7 +134,9 @@ const IndexPage = () => (
     </section>
     <section className={classes.section}>
       <div className="container mx-auto px-4 pb-32 -mt-10">
-        <h2 className={`${classes.title} text-left lg:text-center `}>Some of our clients</h2>
+        <h2 className={`${classes.title} text-left lg:text-center `}>
+          Some of our clients
+        </h2>
         <ClientsCard />
       </div>
     </section>
@@ -173,7 +183,9 @@ const IndexPage = () => (
     </section>
     <section className={`${classes.section} relative -mt-4`}>
       <div className="container mx-auto px-4 pb-16 lg:pb-32">
-        <h2 className={`${classes.title} text-left lg:text-center`}>Happy Clients</h2>
+        <h2 className={`${classes.title} text-left lg:text-center`}>
+          Happy Clients
+        </h2>
         <div>
           <div className="absolute z-0 right-0 top-0 -mt-16 mr-24 chat-box-svg">
             <ChatBoxSvg />
@@ -196,27 +208,29 @@ const IndexPage = () => (
           />
           {/* customer review card*/}
           <div className="bg-white rounded-lg lg:rounded py-6 px-4 md:px-8 lg:py-8 lg:px-12 w-full lg:w-2/3 mx-auto lg:mt-16 z-10 relative text-center shadow-blue-lg">
-            <h2 className="text-3xl lg:text-4xl font-semibold text-csblack mb-2">
-              Lucy Sheehan
-            </h2>
-            <p
-              className="text-gray-600 text-regular mb-4 lg:mb-6"
-              style={{ fontSize: "14px" }}
-            >
-              Marketing Director
-            </p>
-            <p className="text-sm md:text-base text-csblack mb-6 lg:leading-relaxed text-left lg:text-center">
-              We selected KLOC to build and run our Sport Relief Challenge
-              website for their ability to handle the significant technical
-              uncertainties of this project, while giving us the confidence that
-              everything would be ready in time for Sport Relief 2016. We were
-              not disappointed – KLOC Delivered, the project was a success and
-              we continue to use KLOC to build integrated sites for the
-              challenges that we run!
-            </p>
-            <p className="text-lg text-csblue font-semibold">
-              Fitbit International
-            </p>
+            <Reveal animation={Animation.FadeIn}>
+              <h2 className="text-3xl lg:text-4xl font-semibold text-csblack mb-2">
+                Lucy Sheehan
+              </h2>
+              <p
+                className="text-gray-600 text-regular mb-4 lg:mb-6"
+                style={{ fontSize: "14px" }}
+              >
+                Marketing Director
+              </p>
+              <p className="text-sm md:text-base text-csblack mb-6 lg:leading-relaxed text-left lg:text-center">
+                We selected KLOC to build and run our Sport Relief Challenge
+                website for their ability to handle the significant technical
+                uncertainties of this project, while giving us the confidence
+                that everything would be ready in time for Sport Relief 2016. We
+                were not disappointed – KLOC Delivered, the project was a
+                success and we continue to use KLOC to build integrated sites
+                for the challenges that we run!
+              </p>
+              <p className="text-lg text-csblue font-semibold">
+                Fitbit International
+              </p>
+            </Reveal>
           </div>
           {/* customer review card ends */}
         </div>
@@ -230,7 +244,7 @@ const IndexPage = () => (
         <Button variant="gradient" link="/" text="Enquire"></Button>
       </div>
     </section>
-    <Footer/>
+    <Footer />
   </Layout>
 )
 
