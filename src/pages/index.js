@@ -127,7 +127,7 @@ const IndexPage = () => (
         <ClientsCard />
       </div>
     </section>
-    <section className="bg-white w-full -mt-64 pt-40 pb-56 lg:pt-64">
+    <section className="bg-white w-full -mt-64 pt-40 lg:pb-56 lg:pt-64">
       <div className="container mx-auto flex flex-col px-4 lg:flex-row">
         <div className="w-full lg:w-1/2">
           <h2 className={`${classes.title}`}>About us</h2>
@@ -151,17 +151,22 @@ const IndexPage = () => (
         </div>
       </div>
     </section>
-    <section className="w-full pt-32 pb-32 relative">
+    <section className={`${classes.section} relative -mt-4`}>
+      <div className="container mx-auto px-4 pb-16 lg:pb-32">
       <h2 className={`${classes.title}`}>Happy Clients</h2>
       <div>
-        <div className="absolute z-0 right-0 top-0 -mt-16 mr-24">
+        <div className="absolute z-0 right-0 top-0 -mt-16 mr-24 chat-box-svg">
           <ChatBoxSvg />
         </div>
-        {/* feedback */}
-        <div className="bg-white rounded-lg py-8 px-12 w-1/2 mx-auto mt-16 z-10 relative text-center shadow-blue-lg">
-          <h2 className="text-4xl font-semibold text-csblack mb-2">Lucy Sheehan</h2>
-          <p className="text-gray-600 text-regular mb-6" style={{fontSize: "14px"}}>Marketing Director</p>
-          <p className="text-csblack mb-6 leading-relaxed">
+        <span className="h-32 w-32 square-purple absolute z-0 hidden lg:inline-block" style={{right: "25%", top: "25%"}}/>
+          <span className="h-20 w-20 square-purple absolute z-0 hidden lg:inline-block" style={{ right: "22%", top: "65%" }}/>
+          <span className="h-20 w-20 square-blue absolute z-0 hidden lg:inline-block" style={{ right: "40%", top: "85%" }}/>
+          <span className="h-32 w-32 square-blue absolute z-0 hidden lg:inline-block" style={{ left: "26%", top: "70%" }}/>
+        {/* customer review card*/}
+        <div className="bg-white rounded-lg lg:rounded py-6 px-4 md:px-8 lg:py-8 lg:px-12 w-full lg:w-2/3 mx-auto lg:mt-16 z-10 relative text-center shadow-blue-lg">
+          <h2 className="text-3xl lg:text-4xl font-semibold text-csblack mb-2">Lucy Sheehan</h2>
+          <p className="text-gray-600 text-regular mb-4 lg:mb-6" style={{fontSize: "14px"}}>Marketing Director</p>
+          <p className="text-sm md:text-base text-csblack mb-6 lg:leading-relaxed text-left lg:text-center">
             We selected KLOC to build and run our Sport Relief Challenge website for their ability to 
             handle the significant technical uncertainties of this project, while giving us the 
             confidence that everything would be ready in time for Sport Relief 2016. We were not 
@@ -170,7 +175,8 @@ const IndexPage = () => (
           </p>
           <p className="text-lg text-csblue font-semibold">Fitbit International</p>
         </div>
-        {/* feedback ends */}
+        {/* customer review card ends */}
+      </div>
       </div>
     </section>
   </Layout>

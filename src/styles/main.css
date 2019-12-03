@@ -31,6 +31,29 @@
     }
  }
 
+ /**
+* ----------------------------------------------
+* Misc
+* ----------------------------------------------
+**/
+.square-purple {
+    background-color: rgba(108, 99, 255, 0.5);
+}
+
+.square-blue {
+    background-color: rgba(94, 151, 232, 0.5);
+}
+
+.chat-box-svg {
+    display: none;
+}
+@media (min-width: 1600px) {
+    .chat-box-svg {
+        display: inline;
+    }
+ }
+
+
 /**
 * ----------------------------------------------
 * Demo styles
@@ -98,3 +121,4 @@
 .shadow-blue-lg {
     box-shadow: 0 0 32px rgba(94, 151, 232, 0.5);
 }
+
