@@ -14,6 +14,10 @@
     background: linear-gradient(117.33deg, #772AAE -6.75%, #5E97E8 108.52%);
 }
 
+.bg-gradient-blue {
+    background: linear-gradient(90deg, #6C63FF 0%, #5E97E8 100%);
+}
+
 /* Hero section */
 .hero {
    height: calc(100vh - 5rem);
