@@ -57,6 +57,40 @@
     }
  }
 
+ /**
+* ----------------------------------------------
+* Animations
+* ----------------------------------------------
+**/
+
+/* Hero svg animation */
+.dot-box {
+    position: absolute;
+    width: 90%;
+    height: 80%;
+    top:10px;
+    left:25px;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-name:orbit;
+    animation-duration:30s;
+}
+.dot {
+    width: 80px;
+    height: 80px;
+    background: #3F3D56;
+    position: absolute;
+    border-radius: 50%;
+    top:10px;
+    left:00px;
+}
+
+
+
+@keyframes orbit { 
+    from { transform:rotate(0deg) } 
+    to { transform:rotate(360deg) } }
+
 
 /**
 * ----------------------------------------------
@@ -125,4 +159,5 @@
 .shadow-blue-lg {
     box-shadow: 0 0 32px rgba(94, 151, 232, 0.5);
 }
+
 
