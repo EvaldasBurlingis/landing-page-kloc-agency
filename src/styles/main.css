@@ -94,3 +94,7 @@
     }
 }
 
+
+.shadow-blue-lg {
+    box-shadow: 0 0 32px rgba(94, 151, 232, 0.5);
+}

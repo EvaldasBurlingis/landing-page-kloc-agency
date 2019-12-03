@@ -9,6 +9,7 @@ import ClientsCard from "../components/cards/clients"
 import TechnologiesImage from "../components/svg/technologies"
 import GradientBlob from "../components/svg/blob-gradient"
 import AboutImage from "../images/about-section-image.jpg"
+import ChatBoxSvg from "../components/svg/chatbox"
 
 const classes = {
   section: "w-full pt-16",
@@ -115,6 +116,7 @@ const IndexPage = () => (
           </div>
         </div>
       </div>
+      {/* TODO: FIX ACCORDION */}
       <div className="hidden">
         <AccordionMenu/>
       </div>
@@ -125,7 +127,7 @@ const IndexPage = () => (
         <ClientsCard />
       </div>
     </section>
-    <section className="bg-white w-full -mt-64 pt-40 pb-32 lg:pt-64">
+    <section className="bg-white w-full -mt-64 pt-40 pb-56 lg:pt-64">
       <div className="container mx-auto flex flex-col px-4 lg:flex-row">
         <div className="w-full lg:w-1/2">
           <h2 className={`${classes.title}`}>About us</h2>
@@ -147,6 +149,28 @@ const IndexPage = () => (
           </span>
           <img src={AboutImage} alt="" className="w-full absolute top-0 hidden lg:inline-block"/>
         </div>
+      </div>
+    </section>
+    <section className="w-full pt-32 pb-32 relative">
+      <h2 className={`${classes.title}`}>Happy Clients</h2>
+      <div>
+        <div className="absolute z-0 right-0 top-0 -mt-16 mr-24">
+          <ChatBoxSvg />
+        </div>
+        {/* feedback */}
+        <div className="bg-white rounded-lg py-8 px-12 w-1/2 mx-auto mt-16 z-10 relative text-center shadow-blue-lg">
+          <h2 className="text-4xl font-semibold text-csblack mb-2">Lucy Sheehan</h2>
+          <p className="text-gray-600 text-regular mb-6" style={{fontSize: "14px"}}>Marketing Director</p>
+          <p className="text-csblack mb-6 leading-relaxed">
+            We selected KLOC to build and run our Sport Relief Challenge website for their ability to 
+            handle the significant technical uncertainties of this project, while giving us the 
+            confidence that everything would be ready in time for Sport Relief 2016. We were not 
+            disappointed – KLOC Delivered, the project was a success and we continue to use KLOC 
+            to build integrated sites for the challenges that we run! 
+          </p>
+          <p className="text-lg text-csblue font-semibold">Fitbit International</p>
+        </div>
+        {/* feedback ends */}
       </div>
     </section>
   </Layout>
