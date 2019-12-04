@@ -118,6 +118,14 @@
     from { transform:rotate(0deg) } 
     to { transform:rotate(-360deg) } }
 
+
+.slider-control-centerleft {
+    display: none;
+}
+
+.slider-control-centerright {
+    display: none;
+}
 /**
 * ----------------------------------------------
 * Demo styles

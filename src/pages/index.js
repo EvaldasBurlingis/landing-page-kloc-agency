@@ -6,10 +6,7 @@ import ServicesSection from "../components/sections/services"
 import OurClientsSection from "../components/sections/clients"
 import AboutSection from "../components/sections/about"
 import FeedbackSection from "../components/sections/feedback"
-
-import ChatBoxSvg from "../components/svg/chatbox"
-import Footer from "../components/footer"
-import { RevealGlobalStyles, Reveal, Animation } from "react-genie"
+import { RevealGlobalStyles } from "react-genie"
 
 const classes = {
   section: "w-full pt-16",
