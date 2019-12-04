@@ -1,10 +1,9 @@
 import React from "react"
 import Layout from "../components/layout"
 import Button from "../components/button"
-import HeroSection from "../components/hero"
-import ServicesImage from "../components/svg/services"
-import AccordionMenu from "../components/accordion"
-import ClientsCard from "../components/cards/clients"
+import HeroSection from "../components/sections/hero"
+import ServicesSection from "../components/sections/services"
+import OurClientsSection from "../components/sections/clients"
 import TechnologiesImage from "../components/svg/technologies"
 import GradientBlob from "../components/svg/blob-gradient"
 import AboutImage from "../images/about-section-image.jpg"
@@ -29,88 +28,8 @@ const IndexPage = () => (
   <Layout>
     <RevealGlobalStyles />
     <HeroSection />
-    <section className={classes.section}>
-      <div className="container mx-auto px-4">
-        <h2 className={`${classes.title} text-left lg:text-center`}>
-          How can we help you?
-        </h2>
-        <div className="w-full flex flex-wrap flex-col lg:flex-row lg:pt-10">
-          <div className="w-full flex items-center justify-center order-2 md:mb-8 lg:w-3/5 lg:order-1">
-            <ServicesImage />
-          </div>
-          <div
-            className={`${classes.services.wrapper}order-1 lg:w-2/5 lg:order-2 lg:pl-8`}
-          >
-            <h3 className={classes.services.title}>Web development</h3>
-            <p className={classes.services.lead}>
-              We specialise in developing bespoke and complex websites
-            </p>
-            <p className={classes.services.content}>
-              We also provide builds on WordPress and Umbraco with the benefits
-              of professional project management and dependable on-going support
-            </p>
-          </div>
-          <div
-            className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-16`}
-          >
-            <h3 className={classes.services.title}>Ecommerce development</h3>
-            <p className={classes.services.lead}>
-              Our experience in eCommerce goes back over 20 years and we excel
-              in building sites with unique workflows, rules engines and complex
-              integrations
-            </p>
-            <p className={classes.services.content}>
-              We design and build your business-critical eCommerce site with
-              professional project management and follow up with excellent
-              on-going support
-            </p>
-          </div>
-          <div
-            className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-16`}
-          >
-            <h3 className={classes.services.title}>Membership solutions</h3>
-            <p className={classes.services.lead}>
-              A dedicated cloud-based solution for membership organisations and
-              professional bodies
-            </p>
-            <p className={classes.services.content}>
-              The solution is implemented as a WordPress plug-in so that owners
-              can enjoy all of the rich content management features that
-              WordPress offers. However, unlike many basic plug-ins, the
-              features of the KLOC Membership Management System have been
-              implemented to deliver rapid performance even with high-volume
-              databases
-            </p>
-          </div>
-          <div
-            className={`${classes.services.wrapper} order-3 lg:w-1/3 lg:justify-start lg:mt-16`}
-          >
-            <h3 className={classes.services.title}>Mobile App development</h3>
-            <p className={classes.services.lead}>
-              We love the way a mobile app can empower your workforce. We build
-              native apps that can be used to gather data in the field or
-              communicate efficiently with your workforce.
-            </p>
-            <p className={classes.services.content}>
-              To discuss your ideas for mobile app development please contact us
-              for a no-obligation chat
-            </p>
-          </div>
-        </div>
-      </div>
-      {/* TODO: FIX ACCORDION */}
-      <div className="hidden">
-        <AccordionMenu />
-      </div>
-    </section>
-    <section className={classes.section}>
-      <div className="container mx-auto px-4 pb-32 -mt-10">
-        <h2 className={`${classes.title} text-left lg:text-center `}>
-          Some of our clients
-        </h2>
-        <ClientsCard />
-      </div>
-    </section>
+    <ServicesSection />
+    <OurClientsSection/>
     <section className="bg-white w-full -mt-64 pt-40 lg:pb-56 lg:pt-64">
       <div className="container mx-auto flex flex-col px-4 lg:flex-row">
         <div className="w-full lg:w-1/2">

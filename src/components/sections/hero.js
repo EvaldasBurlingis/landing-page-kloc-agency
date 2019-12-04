@@ -1,6 +1,6 @@
 import React from "react"
-import Button from "../components/button"
-import HeroImage from "../components/svg/hero"
+import Button from "../button"
+import HeroImage from "../svg/hero"
 import Tilt from "react-tilt"
 import { Reveal, Animation } from "react-genie"
 
