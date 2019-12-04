@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import Header from "./header"
+import Footer from "./footer"
 import "../styles/main.css"
 
 const Layout = ({ children }) => {
@@ -8,6 +9,7 @@ const Layout = ({ children }) => {
     <div className="w-full min-h-screen bg-gray-200 poppins overflow-x-hidden">
       <Header />
       {children}
+      <Footer/>
     </div>
   )
 }
