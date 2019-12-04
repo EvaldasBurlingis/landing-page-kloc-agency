@@ -64,7 +64,7 @@
 **/
 
 /* Hero svg animation */
-.dot-box {
+.orbit-box {
     position: absolute;
     width: 90%;
     height: 80%;
@@ -75,7 +75,7 @@
     animation-name:orbit;
     animation-duration:30s;
 }
-.dot {
+.planet {
     width: 80px;
     height: 80px;
     background: #3F3D56;
@@ -85,12 +85,38 @@
     left:00px;
 }
 
+.orbit-box-big {
+    position: absolute;
+    width: 90%;
+    height: 85%;
+    top:10px;
+    left:20px;
+    animation-iteration-count:infinite;
+    animation-timing-function:linear;
+    animation-name:orbitAnti;
+    animation-duration:60s;
+}
+
+.planet-big {
+    width: 120px;
+    height: 120px;
+    background: #EDF2F7;
+    position: absolute;
+    border-radius: 50%;
+    bottom:0px;
+    left:0px;
+    z-index: 0;
+}
+
 
 
 @keyframes orbit { 
     from { transform:rotate(0deg) } 
     to { transform:rotate(360deg) } }
 
+@keyframes orbitAnti { 
+    from { transform:rotate(0deg) } 
+    to { transform:rotate(-360deg) } }
 
 /**
 * ----------------------------------------------
