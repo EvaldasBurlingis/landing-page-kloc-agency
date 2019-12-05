@@ -1,7 +1,7 @@
 import React from "react"
 
 const TestimonialCard = ({ name, position, testimonial, company }) => (
-  <div className="">
+  <div>
     <h2 className="text-3xl lg:text-4xl font-semibold text-csblack mb-2">
       {name}
     </h2>

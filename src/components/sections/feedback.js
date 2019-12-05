@@ -32,7 +32,6 @@ const FeedbackSection = () => (
           className="h-32 w-32 square-blue absolute z-0 hidden lg:inline-block"
           style={{ left: "26%", top: "70%" }}
         />
-        {/* customer review card*/}
         <div className="bg-white rounded-lg lg:rounded py-12 px-4 md:px-8 lg:py-12 lg:px-12 w-full lg:w-2/3 mx-auto lg:mt-16 z-10 relative text-center shadow-blue-lg">
           <FeedbackCarousel />
         </div>

@@ -1,9 +1,8 @@
 import React from "react"
-
 import TechnologiesImage from "../svg/technologies"
 import GradientBlob from "../svg/blob-gradient"
 import AboutImage from "../../images/about-section-image.jpg"
-import { Reveal, Animation, RevealMode } from "react-genie"
+import { Reveal, Animation } from "react-genie"
 
 const AboutSection = () => (
   <section className="bg-white w-full -mt-64 pt-40 lg:pb-56 lg:pt-64">
@@ -14,7 +13,6 @@ const AboutSection = () => (
             <h2 className="font-bold text-3xl md:text-5xl text-csdark mb-6 text-center">
               About us
             </h2>
-
             <p className="mb-4">
               KLOC is a vibrant software development company creating bespoke
               solutions in the heart of Southern England

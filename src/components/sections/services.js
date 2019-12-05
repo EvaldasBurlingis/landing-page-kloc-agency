@@ -1,7 +1,6 @@
 import React from "react"
 import ServicesImage from "../svg/services"
 import ServicesCard from "../cards/services"
-import AccordionMenu from "../accordion"
 import { Reveal, Animation, RevealMode } from "react-genie"
 import { servicesContent } from "../../content/services"
 import Wave from "../svg/wave"
@@ -25,37 +24,15 @@ const ServicesSection = () => (
             <ServicesImage />
           </Reveal>
         </div>
-        <ServicesCard
-          title={servicesContent.web.title}
-          lead={servicesContent.web.lead}
-          content={servicesContent.web.content}
-          position={
-            "order-1 lg:w-1/2 xl:w-2/5 lg:justify-start xl:order-2 xl:pl-8"
-          }
-        />
-        <ServicesCard
-          title={servicesContent.ecommerce.title}
-          lead={servicesContent.ecommerce.lead}
-          content={servicesContent.ecommerce.content}
-          position={"order-3 lg:w-1/2 xl:w-1/3 lg:justify-start xl:mt-16"}
-        />
-        <ServicesCard
-          title={servicesContent.membership.title}
-          lead={servicesContent.membership.lead}
-          content={servicesContent.membership.content}
-          position={"order-3 lg:w-1/2 xl:w-1/3 lg:justify-start xl:mt-16"}
-        />
-        <ServicesCard
-          title={servicesContent.mobile.title}
-          lead={servicesContent.mobile.lead}
-          content={servicesContent.mobile.content}
-          position={"order-3 lg:w-1/2  xl:w-1/3 lg:justify-start xl:mt-16"}
-        />
+        {servicesContent.map(service => (
+          <ServicesCard
+            title={service.title}
+            lead={service.lead}
+            content={service.content}
+            position={service.position}
+          />
+        ))}
       </div>
-    </div>
-    {/* TODO: FIX ACCORDION */}
-    <div className="hidden">
-      <AccordionMenu />
     </div>
   </section>
 )
