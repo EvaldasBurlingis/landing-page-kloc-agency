@@ -29,8 +29,8 @@ const IndexPage = () => (
     <OurClientsSection/>
     <AboutSection />
     <FeedbackSection />
-    <section className={`${classes.section} bg-white`}>
-      <div className="container mx-auto px-4 pb-16 text-center">
+    <section className="bg-white py-16 md:py-20 w-full">
+      <div className="container mx-auto px-4 text-center">
         <h2 className={`${classes.title} mb-8`}>
           Let's talk about your project
         </h2>

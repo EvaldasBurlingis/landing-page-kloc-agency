@@ -10,6 +10,7 @@ const FeedbackCarousel = () => (
     autoplayInterval={2500}
     pauseOnHover={true}
     wrapAround={true}
+    dragging={true}
   >
     {CustomerFeedbackData.map(testimonial => (
       <TestimonialCard

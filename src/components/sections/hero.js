@@ -13,7 +13,7 @@ const HeroSection = () => (
             We are here to find solutions to your problems
           </h1>
           <p className="text-md tracking-wide text-gray-100 mb-6 md:text-lg md:mb-8">
-            The KLOC development team have decades of experience building
+            The KLOC development team has decades of experience building
             business applications for companies ranging from international
             publishers to mobile networks
           </p>

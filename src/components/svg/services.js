@@ -1,4 +1,5 @@
 import React from "react"
+import { Reveal, Animation } from "react-genie"
 
 const ServicesImage = () => (
   <svg

@@ -7,7 +7,7 @@ const classes = {
 }
 
 const Footer = () => (
-  <footer className="py-2 lg:py-4">
+  <footer className="py-8">
     <div className="container mx-auto px-4 w-full flex items-center">
       <img src={KlocLogo} className="w-40 h-auto mr-auto" alt="Kloc logo" />
       <nav className="flex-1 mx-auto flex justify-center lg:justify-end">

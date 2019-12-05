@@ -4,13 +4,17 @@ import ServicesCard from "../cards/services"
 import AccordionMenu from "../accordion"
 import { Reveal, Animation , RevealMode} from "react-genie"
 import { servicesContent } from "../../content/services"
+import Wave from "../svg/wave";
 
 const ServicesSection = () => (
-  <section className="w-full pt-16">
+  <section className="w-full pt-16 relative">
+     <div className="absolute w-full hidden lg:block" style={{top: "-8rem"}}>
+       <Wave />
+     </div>
     <div className="container mx-auto px-4">
       <Reveal animation={Animation.FadeInUp} mode={RevealMode.Clone}>
         <div>
-          <h2 className="font-bold text-3xl md:text-5xl text-csdark mb-6 text-left lg:text-center">
+          <h2 className="font-bold text-3xl md:text-5xl text-csdark mb-6 text-center">
             How can we help you?
           </h2>
         </div>
