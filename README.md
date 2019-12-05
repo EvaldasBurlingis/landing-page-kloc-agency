@@ -8,6 +8,6 @@
 
 ---
 
-## Landing Page Design -- v1
+## Landing Page Design
 
-![V1](assets/knoc-v1.png)
+![V1](assets/kloc-actual.png)
