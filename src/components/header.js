@@ -11,7 +11,6 @@ const Header = () => (
     <div className="container mx-auto px-4 w-full flex items-center">
       <img src={KlocLogo} className="w-40 h-auto mr-auto" alt="Kloc logo" />
       <nav className="flex-1 mx-auto flex justify-center lg:justify-end">
-        {/* TABLET/DESKTOP MENU */}
         <div className="hidden lg:inline-block">
           <Link to="/" className={classes.links}>
             Services
