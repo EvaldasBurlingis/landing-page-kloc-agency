@@ -35,9 +35,7 @@ const AboutSection = () => (
               out more about what makes us a better choice for your next
               project.
             </p>
-            <p className="md:mb-8">
-              Some of technologies we work with:
-            </p>
+            <p className="md:mb-8">Some of technologies we work with:</p>
           </div>
         </Reveal>
         <Reveal animation={Animation.FadeInUp}>
@@ -47,16 +45,16 @@ const AboutSection = () => (
         </Reveal>
       </div>
       <div className="w-full lg:w-1/2 relative mt-10 lg:pl-20">
-          <div>
-            <span className="w-1/3 -mt-16 hidden lg:inline-block absolute z-0">
-              <GradientBlob />
-            </span>
-            <img
-              src={AboutImage}
-              alt="Woman working on a computer"
-              className="w-full absolute top-0 hidden lg:inline-block rounded-lg shadow-xl"
-            />
-          </div>
+        <div>
+          <span className="w-1/3 -mt-16 hidden lg:inline-block absolute z-0">
+            <GradientBlob />
+          </span>
+          <img
+            src={AboutImage}
+            alt="Woman working on a computer"
+            className="w-full absolute top-0 hidden lg:inline-block rounded-lg shadow-xl"
+          />
+        </div>
       </div>
     </div>
   </section>

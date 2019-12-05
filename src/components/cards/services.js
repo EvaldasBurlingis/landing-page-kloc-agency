@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import { Reveal, Animation, RevealMode } from "react-genie"
 
 const ServicesCard = ({ title, lead, content, position }) => (

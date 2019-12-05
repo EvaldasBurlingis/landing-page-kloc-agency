@@ -10,8 +10,7 @@ import { RevealGlobalStyles } from "react-genie"
 
 const classes = {
   section: "w-full pt-16",
-  title:
-    "font-bold text-3xl md:text-5xl text-csdark mb-6",
+  title: "font-bold text-3xl md:text-5xl text-csdark mb-6",
   services: {
     title: "font-semibold text-gray-800 text-xl mb-2",
     lead: "font-medium mb-6 text-base",
@@ -26,7 +25,7 @@ const IndexPage = () => (
     <RevealGlobalStyles />
     <HeroSection />
     <ServicesSection />
-    <OurClientsSection/>
+    <OurClientsSection />
     <AboutSection />
     <FeedbackSection />
     <section className="bg-white py-16 md:py-20 w-full">

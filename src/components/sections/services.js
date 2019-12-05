@@ -2,15 +2,15 @@ import React from "react"
 import ServicesImage from "../svg/services"
 import ServicesCard from "../cards/services"
 import AccordionMenu from "../accordion"
-import { Reveal, Animation , RevealMode} from "react-genie"
+import { Reveal, Animation, RevealMode } from "react-genie"
 import { servicesContent } from "../../content/services"
-import Wave from "../svg/wave";
+import Wave from "../svg/wave"
 
 const ServicesSection = () => (
   <section className="w-full pt-16 relative">
-     <div className="absolute w-full hidden lg:block" style={{top: "-8rem"}}>
-       <Wave />
-     </div>
+    <div className="absolute w-full hidden lg:block" style={{ top: "-8rem" }}>
+      <Wave />
+    </div>
     <div className="container mx-auto px-4">
       <Reveal animation={Animation.FadeInUp} mode={RevealMode.Clone}>
         <div>

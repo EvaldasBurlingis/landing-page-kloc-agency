@@ -1,11 +1,11 @@
 import React from "react"
 import ChatBoxSvg from "../svg/chatbox"
 import FeedbackCarousel from "../feedbackCarousel"
-import Wave from "../svg/wave";
+import Wave from "../svg/wave"
 
 const FeedbackSection = () => (
   <section className="w-full pt-16 relative -mt-4">
-    <div className="absolute w-full hidden lg:block" style={{top: "-6rem"}}>
+    <div className="absolute w-full hidden lg:block" style={{ top: "-6rem" }}>
       <Wave />
     </div>
     <div className="container mx-auto px-4 pb-16 lg:pb-32">

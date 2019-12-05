@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 
 const TestimonialCard = ({ name, position, testimonial, company }) => (
   <div className="">
@@ -12,7 +12,7 @@ const TestimonialCard = ({ name, position, testimonial, company }) => (
       {position}
     </p>
     <p className="text-sm md:text-base text-csblack mb-6 lg:leading-relaxed text-left lg:text-center">
-     {testimonial}
+      {testimonial}
     </p>
     <p className="text-lg text-csblue font-semibold mb-2">{company}</p>
   </div>

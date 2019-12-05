@@ -5,7 +5,7 @@ import Tilt from "react-tilt"
 import { Reveal, Animation } from "react-genie"
 
 const HeroSection = () => (
-    <section className="hero w-full bg-gradient-purple-blue">
+  <section className="hero w-full bg-gradient-purple-blue">
     <div className="container mx-auto px-4 w-full h-full flex flex-col items-center justify-center relative  md:pt-20 lg:pt-0 lg:flex-row">
       <div className="w-full z-10 md:pt-0 md:w-4/5 md:mx-auto lg:w-3/5">
         <Reveal animation={Animation.SlideInLeft}>
