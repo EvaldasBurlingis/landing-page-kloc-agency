@@ -1,10 +1,12 @@
-# Landing page design + code for Knoc
+# About
 
-## Landing page
+Landing page for digital agency, built using GatsbyJs.
 
-- Built with [GatsbyJs](https://www.gatsbyjs.org/)
-- Styled with [TailwindCSS](https://tailwindcss.com/) + custom styles
-- Images from [Undraw](https://undraw.co/)
+## Built with
+
+- [GatsbyJs](https://www.gatsbyjs.org/)
+- [TailwindCSS](https://tailwindcss.com/)
+- [Undraw](https://undraw.co/)
 
 ---
 
